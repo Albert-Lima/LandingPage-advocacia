@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cor-AzulPrincipal: #000F1D;
+}
+#SectionTopo{
+    background-color: var(--cor-AzulPrincipal);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-shadow: inset 0px 0px 100px 200px rgba(0, 0, 0, 0.678);
+}
+#SectionTopo::after{
+    content: "";
+    display: block;
+    background-image: url('imagens/BackGroundSectionTopo.png');
+    background-size: 100%;
+    filter: opacity(0.2);
+    height: 100vh;
+    z-index: 1;
+}
+header{
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 130px;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 2;
+}
+#linhaHeaderLeft{
+    width: 10%;
+    height: 2px;
+    background-color: white;
+}
+#LogoEmpresa{
+    height: 90px;
+}
+#ImgLogoEmpresa{
+    height: 90px;
+}
+#botõesHeader{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-left: 17%;
+    align-items: center;
+    justify-content: space-between;
+}
+.BttDirect{
+    background: none;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.PontoSeparador{
+    height: 6px;
+    width: 6px;
+    background-color: orange;
+    border-radius: 100%;
+}
+#linhaHeaderRight{
+    width: 10%;
+    height: 2px;
+    background-color: white;
+    right: 0px;
+    margin-right: 0px;
+}
+#TítuloSite{
+    position: absolute;
+    top: 40vh;
+    left: 10%;
+    z-index: 3;
+}
+#TextoBrancoTop{
+    color: white;
+    font-size: 20pt;
+    font-weight: 900;
+}
+#TextoOrangeTop{
+    color: orange;
+    font-size: 20pt;
+    font-weight: 900;
+}
+#FitaTop{
+    z-index: 4;
+    position: absolute;
+    top: 80vh;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(88, 65, 0, 0.562);
+    backdrop-filter: blur(1px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#TextoFita{
+    color: white;
+    margin: auto;
+    font-weight: 300;
+}
+#brasão{
+    width: 100px;
+    position: absolute;
+    top: -90px;
+    left: calc(100vh - 28px);
+    z-index: -1;
+}
+#BrasãoImg{
+    width: 100px;
+}
+#SegundaSection{
+    background-color: white;
+    height: 600px;
+}
