@@ -232,7 +232,7 @@ header{
 .BottomÁrea{
     margin-top: 10px;
     margin-left: 40px;
-    color: gray;
+    color: rgb(164, 164, 164);
     font-size: 12pt;
     max-width: 500px;
 }
@@ -262,4 +262,86 @@ header{
 .DescNumero{
     color: white;
     font-size: 15pt;
+}
+
+#QuemSomos{
+    background-color: var(--cor-AzulPrincipal);
+    height: max-content;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#MasterQuemSomos{
+    margin: auto;
+    width: 70%;
+    height: max-content;
+    border: 2px rgb(186, 121, 0) solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+#QSTitle{
+    background-color: var(--cor-AzulPrincipal);
+    color: white;
+    width: 150px;
+    text-align: center;
+    position: relative;
+    top: -12px;
+    left: 20px;
+}
+#TextBoxQS{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+#QSParte1{
+    width: 50%;
+}
+#QSParte2{
+    width: 50%;
+}
+.TextQS{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 95%;
+}
+.TitleQS{
+    color: rgb(238, 155, 1);
+    margin-top: 20px;
+}
+.DescQS{
+    margin-top: 10px;
+    color: rgb(164, 164, 164);
+}
+
+
+#JuramentoDeHipócrates{
+    height: max-content;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#containerJuramento{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    align-items: center;
+    justify-content: space-between;
+}
+#TopJuramento{
+    text-align: center;
+    font-size: 17pt;
+}
+#BottomJuramento{
+    text-align: center;
+    font-size: 12pt;
 }
