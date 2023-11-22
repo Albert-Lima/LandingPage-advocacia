@@ -345,3 +345,68 @@ header{
     text-align: center;
     font-size: 12pt;
 }
+
+
+#equipe{
+    display: flex;
+    flex-direction: column;
+}
+#TopEquipe{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--cor-AzulPrincipal);
+    height: 300px;
+}
+#TopParte1{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#TopParte1 h1{
+    color: rgb(238, 155, 1);
+}
+#TopParte1 p{
+    color: white;
+}
+#TopParte2{
+    background-color: gray;
+    width: 50%;
+}
+#BottomEquipe{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 300px;
+}
+#ImgFuncionário{
+    background-color: gray;
+    height: 100%;
+    width: 50%;
+    position: relative;
+    z-index: 2;
+}
+#boxFuncionárioText{
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#CurriculumFuncionário{
+    border: 2px solid orange;
+    padding: 20px;
+    padding-left: 50px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    left: -20px;
+}
+#CurriculumFuncionário h2{
+    color: rgb(238, 155, 1);
+}
+#CurriculumFuncionário ul{
+    color: rgb(85, 85, 85);
+}
