@@ -16,7 +16,9 @@
     content: "";
     display: block;
     background-image: url('imagens/BackGroundSectionTopo.png');
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     filter: opacity(0.2);
     height: 100vh;
     z-index: 1;
@@ -43,13 +45,53 @@ header{
 #ImgLogoEmpresa{
     height: 90px;
 }
-#botõesHeader{
+#bttNav{
+    width: 50%;
+    position: absolute;
+    top: 60px;
+    right: 10%;
+}
+#bttMenu{
+    display: none;
+}
+.barra1-1, .barra2-1{
+    background-color: white;
+    height: 4px;
+    transition: 0.2s;
+}
+.botõesHeaderBarra1{
     display: flex;
     flex-direction: row;
-    width: 50%;
-    margin-left: 17%;
+    width: 90%;
+    margin: auto;
     align-items: center;
     justify-content: space-between;
+    transition: 0.2s;
+}
+.botõesHeaderBarra2{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.2s;
+}
+.barra1-2{
+    background-color: white;
+    height: 4px;
+    transition: 0.2s;
+    rotate: 45deg;
+    margin-top: 5px;
+}
+.barra2-2{
+    background-color: white;
+    height: 4px;
+    transition: 0.2s;
+    margin-bottom: 5px;
+    rotate: -45deg;
 }
 .BttDirect{
     background: none;
@@ -57,6 +99,11 @@ header{
     border: none;
     outline: none;
     cursor: pointer;
+    font-size: 9pt;
+}
+.BttDirect:hover{
+    color: rgb(145, 145, 145);
+    transition: 0.2s;
 }
 .PontoSeparador{
     height: 6px;
@@ -109,7 +156,7 @@ header{
     width: 100px;
     position: absolute;
     top: -90px;
-    left: calc(100vh - 28px);
+    left: calc(50% - 50px);
     z-index: -1;
 }
 #BrasãoImg{
@@ -409,4 +456,79 @@ header{
 }
 #CurriculumFuncionário ul{
     color: rgb(85, 85, 85);
+}
+
+@media (max-width: 970px){
+    .BttDirect{
+        font-size: 7pt;
+    }
+    #TextoBrancoTop{
+        font-size: 12pt;
+    }
+    #TextoOrangeTop{
+        font-size: 12pt;
+    }
+    #TextoFita{
+        font-size: 12pt;
+        font-weight: 600;
+        text-shadow: 0px 0px 8px black;
+    }
+    #brasão{
+        width: 60px;
+        top: -40px;
+        left: calc(50% - 30px);
+    }
+    #BrasãoImg{
+        width: 60px;
+    }
+}
+@media (max-width: 750px){
+    .botõesHeaderBarra1{
+        display: none;
+    }
+    .botõesHeaderBarra2{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 70%;
+        margin: auto;
+        margin-top: 50px;
+        align-items: center;
+        justify-content: space-between;
+        transition: 0.2s;
+    }
+    .barra1-2{
+        background-color: white;
+        height: 4px;
+        transition: 0.2s;
+        rotate: 45deg;
+        margin-top: 5px;
+    }
+    .barra2-2{
+        background-color: white;
+        height: 4px;
+        transition: 0.2s;
+        margin-bottom: 5px;
+        rotate: -45deg;
+    }
+    #LogoEmpresa{
+        position: absolute;
+        left: 10%;
+    }
+    #bttNav{
+        position: absolute;
+        top: 35px;
+        right: 10%;
+        width: 50px;
+        height: 25px;
+        padding-top: 20px;
+    }
+    #bttMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 15px;
+        width: 30px;
+        position: relative;
+    }
 }
