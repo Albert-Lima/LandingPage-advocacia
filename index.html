@@ -293,40 +293,33 @@
             </article>
         </div>
     </section>
-    
+
     <section id="ContatoSeção">
         <section id="contatoParte1">
-            <h1>CONTATO</h1>
-            <p>Entre em contato conosco preenchendo as <br> informações do formulário abaixo:</p>
-            <form action="" method="post">
-                <input type="text" name="" id="" placeholder="Seu nome">
-                <input type="email" name="" id="" placeholder="Seu e-mail">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Sua mensagem">
-                </textarea>
-                <button type="submit">ENVIAR</button>
+            <h1 id="TitleContact">CONTATO</h1>
+            <p id="DescContact">Entre em contato conosco preenchendo as <br> informações do formulário abaixo:</p>
+            <form action="" method="post" id="Formulário">
+                <input type="text" name="" id="" placeholder="Seu nome" class="caixaForm" id="nome">
+                <input type="email" name="" id="" placeholder="Seu e-mail" class="caixaForm" id="email">
+                <textarea name="area de texto" cols="30" rows="10" placeholder="Sua mensagem" id="mensageBox"></textarea>
+                <button type="submit" id="buttonSubmit">ENVIAR</button>
             </form>
         </section>
         <section id="contatoParte2">
-            <div>
-                <div>
-                    <img src="" alt=""><!--icone de enviar-->
-                    <a href=""></a><!--link do portifólio-->
-                </div>
-                <div>
-                    <img src="" alt=""><!--icone Whatsapp-->
-                    <h2>(85)98939-0143</h2>
-                </div>
+            <div id="BoxLinkSite">
+                <img src="arquivos/imagens/icone link.png" alt="icone de link"><!--icone de enviar-->
+                <a href="https://albert-lima.github.io/LimaDev-Portifolio/" target="_blank">Potifólio LimaDev</a><!--link do portifólio-->
+            </div>
+            <div id="BoxContactPhone">
+                <img src="arquivos/imagens/icone whatsapp.png" alt=""><!--icone Whatsapp-->
+                <h2>(85)98939-0143</h2>
             </div>
         </section>
     </section>
-    <div id="BttReturnTop">
-        <button id="BttReturn">&#8593;</button>
-    </div>
+    <button id="BttReturn">&#8593;</button>
     <footer>
-        <div>
-            <img src="" alt="">
-        </div>
-        <div>
+        <img src="arquivos/imagens/imagemLogoSite.png" alt="logo empresa" id="logoFooter">
+        <div id="direitosReservados">
             <h2>&copy; 2023 LimaDev. Todos os direitos reservados</h2>
         </div>
     </footer>

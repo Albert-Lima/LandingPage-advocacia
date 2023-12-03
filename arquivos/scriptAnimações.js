@@ -13,7 +13,7 @@ function BttMenu(){
     barra2.classList.toggle('barra2-2')
 
     bttNav.style.backgroundColor = 'rgba(255, 255, 255, 0.082)'
-    bttNav.style.backdropFilter = 'blur(3px)'
+    bttNav.style.backdropFilter = 'blur(10px)'
     bttNav.style.height = 'max-content'
     bttNav.style.width = '200px'
     bttNav.style.paddingBottom = '20px'

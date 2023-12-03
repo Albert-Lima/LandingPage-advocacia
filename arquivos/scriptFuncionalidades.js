@@ -10,6 +10,9 @@ var bttCrew = document.querySelector('#bttCrew')
 var SeçãoContact = document.querySelector('#ContatoSeção')
 var bttContact = document.querySelector('#bttContact')
 
+var bttTop = document.querySelector('#BttReturn')
+var topo = document.querySelector('#ImgLogoEmpresa')
+
 function ToAtuação(){
     let SectionRect = áreaAtuaçãoSection.getBoundingClientRect()
     let centerY = SectionRect.top + SectionRect.height / 2 - window.innerHeight / 2
@@ -49,3 +52,13 @@ function ToContact(){
     })
 }
 bttContact.addEventListener('click', ToContact)
+
+function ToTop(){
+    let SectionRect = topo.getBoundingClientRect()
+    let centerY = SectionRect.top + SectionRect.height / 2 - window.innerHeight / 2
+    window.scrollTo({
+        top: centerY + window.scrollY,
+        behavior: 'smooth'
+    })
+}
+bttTop.addEventListener('click', ToTop)
