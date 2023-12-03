@@ -255,6 +255,8 @@ header{
 }
 .abrangênciaBox{
     margin-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 .TopÁrea{
     display: flex;
@@ -264,11 +266,9 @@ header{
 }
 .TitleÁrea{
     color: rgb(238, 155, 1);
-    margin-left: 20px;
 }
 .BottomÁrea{
     margin-top: 10px;
-    margin-left: 40px;
     color: rgb(164, 164, 164);
     font-size: 12pt;
     max-width: 500px;
@@ -511,6 +511,18 @@ header{
     #BrasãoImg{
         width: 60px;
     }
+    .Numeros{
+        width: 200px;
+    }
+    .TextNumeros{
+        width: 100%;
+    }
+    .TilteNumero{
+        font-size: 20pt;
+    }
+    .DescNumero{
+        font-size: 15pt;
+    }
 }
 @media (max-width: 750px){
     #AtuaçãoNoDireito{
@@ -564,6 +576,10 @@ header{
         width: 30px;
         position: relative;
     }
+    #Section4{
+        flex-direction: column;
+        height: 400px;
+    }
 }
 @media (max-width: 540px){
     #AtuaçãoNoDireito{
@@ -577,5 +593,32 @@ header{
     }
     #BoxContenciosa{
         margin-top: 20px;
+    }
+    .abrangênciaBox{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .TitleÁrea{
+        font-size: 12pt;
+    }
+    .TextÁrea{
+        font-size: 8pt;
+    }
+    #TextBoxQS{
+        flex-direction: column;
+    }
+    #QSParte1{
+        width: 100%;
+    }
+    #QSParte2{
+        width: 100%;
+    }
+}
+@media (max-width: 420px){
+    .TitleQS{
+        font-size: 15pt;
+    }
+    .DescQS{
+        font-size: 10pt;
     }
 }
