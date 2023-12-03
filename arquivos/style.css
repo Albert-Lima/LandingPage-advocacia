@@ -408,7 +408,9 @@ header{
     color: white;
 }
 #TopParte2{
-    background-color: gray;
+    background-image: url('imagens/assinandoContrato.jpg');
+    background-size: cover;
+    filter: opacity(0.3);
     width: 50%;
 }
 #BottomEquipe{
@@ -418,11 +420,15 @@ header{
     height: 300px;
 }
 #ImgFuncionário{
-    background-color: gray;
     height: 100%;
+    display: flex;
+    justify-content: end;
     width: 50%;
     position: relative;
     z-index: 2;
+}
+#ImgFuncionário img{
+    height: 100%;
 }
 #boxFuncionárioText{
     background-color: white;
@@ -447,7 +453,41 @@ header{
 #CurriculumFuncionário ul{
     color: rgb(85, 85, 85);
 }
-
+@media (max-width: 1260px){
+    #BoxMartelo{
+        right: 10%;
+    }
+    #ImagemMartelo{
+        width: 300px;
+    }
+    #BoxAssinatura{
+        left: 10%;
+        top: 400px;
+    }
+    #imagemAssinatura{
+        width: 300px;
+    }
+}
+@media (max-width: 1125px){
+    #PrimeiroTexto{
+        margin-left: 0px;
+    }
+    #BoxPreventiva{
+        margin: auto;
+        max-width: 500px;
+    }
+    #BoxContenciosa{
+        margin: auto;
+        margin-top: 50px;
+        max-width: 500px;
+    }
+    #BoxMartelo{
+        display: none;
+    }
+    #BoxAssinatura{
+        display: none;
+    }
+}
 @media (max-width: 970px){
     .BttDirect{
         font-size: 7pt;
@@ -473,6 +513,9 @@ header{
     }
 }
 @media (max-width: 750px){
+    #AtuaçãoNoDireito{
+        padding: 20px;
+    }
     .botõesHeaderBarra1{
         display: none;
     }
@@ -520,5 +563,19 @@ header{
         height: 15px;
         width: 30px;
         position: relative;
+    }
+}
+@media (max-width: 540px){
+    #AtuaçãoNoDireito{
+        margin-top: -50px;
+    }
+    #TitlePreventiva, #TilteContenciosa{
+        font-size: 12pt;
+    }
+    .TextPreventiva, .TextContenciosa{
+        font-size: 10pt;
+    }
+    #BoxContenciosa{
+        margin-top: 20px;
     }
 }
