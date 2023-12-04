@@ -710,7 +710,7 @@ footer{
     }
     #Section4{
         flex-direction: column;
-        height: 400px;
+        height: max-content;
     }
 }
 @media (max-width: 640px){
