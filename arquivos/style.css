@@ -304,6 +304,8 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
     gap: 20px;
     height: 300px;
     background-color: rgb(198, 129, 0);
@@ -767,6 +769,9 @@ footer{
     #Section4{
         flex-direction: column;
         height: max-content;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        gap: 40px;
     }
 }
 @media (max-width: 640px){
